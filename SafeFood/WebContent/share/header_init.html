@@ -1,0 +1,72 @@
+
+<header class="MOD_HEADER2">
+  <div class="MOD_HEADER2_SocialBarContainer">
+    <div data-layout="_r" class="MOD_HEADER2_SocialBar">
+      
+      <!-- 회원가입 /  로그인 -->
+      <button id='_btnSignup'><a href="signUp.jsp" class="atagforNone">SignUp</a></button>
+      <button id='_btnLogin'><a class="atagforNone">Login</a></button>
+    </div>
+  </div>
+  <section class="MOD_MENU" data-theme="_bgp">
+  <div data-layout="_r" class="nopadding">
+    <nav class="MOD_MENU_Nav">
+      <p class="MOD_MENU_Title">Menu</p>
+      <svg class="MOD_MENU_Button" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+        <rect width="30" height="6"/>
+        <rect y="24" width="30" height="6"/>
+        <rect y="12" width="30" height="6"/>
+      </svg>
+      <ul class="AP_Menu_List">
+        <li>
+          <a href="#" data-theme="_bgp">공지 사항</a>
+        </li>
+        <li>
+          <a href="#" data-theme="_bgp">상품 정보</a>
+        </li>
+        <li>
+          <a href="#" data-theme="_bgp">베스트 섭취 정보</a>
+        </li>        
+      </ul>
+    </nav>
+  </div>
+</section>  
+  
+  <div data-layout="_r" class="MOD_HEADER2_Details">
+    <div data-layout="al16 de8" id="_mainLogo">
+    <a href="main.jsp">
+      <img class="MOD_HEADER2_Logo" alt="Company name" src="http://edu.ssafy.com/asset/images/header-logo.jpg" height="100px"></img>
+	</a>
+    </div>
+    <div data-layout="al16 de8" class="MOD_HEADER2_SearchContainer" id="_mainNav">
+    </div>
+  </div>
+  
+  
+</header>
+
+<aside id="_loginside" style="z-index: 3;">
+	<input  TYPE="IMAGE" src="img/X.png" align="absmiddle" style="width:30px" id="_btncloseaside">
+	<label style="font-size:2em">Login</label>
+	<form>
+		ID <br/>
+		<input id="_loginId" type="text">
+		<br/>
+		PASSWORD  
+		<a href="findAccount.jsp" class="atagforNone" style="font-style: ITALIC;">forgot a password?</a>
+		<br/>
+		<input id="_loginPassword" type="password">
+	</form>
+</aside>
+
+<script>
+$("#_loginside").hide();
+$('#_btnLogin').click(
+		function(){
+			$("#_loginside").show();
+		}
+	);
+$('#_btncloseaside').click(function(){
+	$("#_loginside").hide();
+});
+</script>
