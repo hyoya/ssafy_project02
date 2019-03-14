@@ -150,6 +150,8 @@
     }
     return { toggleMenu: toggleMenu };
   }();
+  
+  
   var MODULE_LIGHTBOX = function () {
     //Lightbox
     function lightboxCreate(aTag, imgsrc) {
